@@ -1,41 +1,112 @@
 <!DOCTYPE html>
-
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <title>Salud Vital</title>
-  </head>
-<!--body con margen 0 para que el encabezado de la página--cubra totalmente los bordes-->
+<head>
+    <meta charset="UTF-8">
+    <title>Salud Vital</title>
+</head>
+
 <body style="
   margin:0;
-  background-color:#e8e8e8;
+  background-image: url('vegetales.png');
+  background-size: cover;
 ">
 
-  <header style="background-color:red;">
-    <!--Div para el título de la página-->
+<header style="background-color:red;">
+    
     <div style="text-align:center;padding-top:20px;">
-      <h1 style="color:white;">Salud Vital</h1>
+        <p style="color:white; font-size:35px; font-weight:bold;">Salud Vital</p>
     </div>
 
-    <!--Barra de navegación-->
-    <!--los estilos del nav hacen que tenga un color salmon, que la barra de navegación choque con la del título y hace que los links esten separados-->
-      <nav style="
+    <nav style="
         background-color:salmon;
         margin:0px;
         padding:10px;
         display:flex;
         justify-content:space-around;
-        "> 
-        <a href="HOME.html" style="text-decoration:none; color:white; font-size:25px;font-weight:bold;">Home</a>
-        <a href="BLOG.html" style="text-decoration:none; color:white; font-size:25px; font-weight:bold;">Blog</a>
-        <a href="CONTACTO.html" style="text-decoration:none;  color:white; font-size:25px; font-weight:bold;">Contacto</a>
-      </nav>
-  </header>
-  <section>
-    
-  </section>
-  <footer>
-    
-  </footer>
+    "> 
+        <a href="HOME.html" style="text-decoration:none; color:white; font-size:20px;font-weight:bold;">Home</a>
+        <a href="BLOG.html" style="text-decoration:none; color:white; font-size:20px; font-weight:bold;">Blog</a>
+        <a href="CONTACTO.html" style="text-decoration:none;  color:white; font-size:20px; font-weight:bold;">Contacto</a>
+    </nav>
+
+</header>
+
+<section style="display:flex; justify-content:center; margin-top:30px;">
+
+<div style="
+    background-color:white;
+    border:3px solid orange;
+    padding:20px;
+    width:60%;
+">
+
+<form>
+
+    <p>Nombre completo</p>
+    <input type="text" placeholder="Ej: Juan Pérez" required>
+
+    <p>Fecha de nacimiento</p>
+    <input type="date" required>
+
+    <p>Correo electrónico</p>
+    <input type="email" placeholder="ejemplo@gmail.com" required>
+
+    <p>Número telefónico</p>
+    <input type="text" placeholder="6xxx-xxxx" pattern="[0-9]{4}-[0-9]{4}" required>
+
+    <p>Género</p>
+    <input type="radio" name="genero"> Masculino
+    <input type="radio" name="genero"> Femenino
+    <input type="radio" name="genero"> Otro
+
+    <p>Dirección</p>
+    <input type="text" placeholder="Ej: Colón, Panamá">
+
+    <p>Peso (kg)</p>
+    <input type="number" placeholder="Ej: 70">
+
+    <p>Altura (cm)</p>
+    <input type="number" placeholder="Ej: 170">
+
+    <p>Nivel de actividad física</p>
+    <select>
+        <option>Sedentario</option>
+        <option>Ligero</option>
+        <option>Moderado</option>
+        <option>Intenso</option>
+    </select>
+
+    <p>Objetivo nutricional</p>
+    <input type="checkbox"> Perder peso
+    <input type="checkbox"> Ganar masa muscular
+    <input type="checkbox"> Mejorar la salud
+
+    <p>Alergias o restricciones alimentarias</p>
+    <textarea placeholder="Escriba aquí..."></textarea>
+
+    <p>Cantidad diaria de agua (litros)</p>
+    <input type="range" min="0" max="5" step="0.5" value="1"
+        oninput="agua.value = this.value">
+    <output name="agua">1</output> L
+
+    <p>Foto de alimentos comunes</p>
+    <input type="file" accept="image/*">
+
+    <p>Hora habitual de comida principal</p>
+    <input type="time">
+
+    <br><br>
+    <input type="submit" value="Registrarse">
+
+</form>
+
+</div>
+
+</section>
+
+<footer style="text-align:center; margin-top:20px;">
+    <p>© 2026 Salud Vital</p>
+</footer>
+
 </body>
 </html>
