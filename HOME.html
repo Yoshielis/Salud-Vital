@@ -1,24 +1,173 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="styles/style.css"/>
-  <title>Salud Vital</title>
-</head>
-<body>
-  <header>
-    <nav> 
-      <a href="CONTACTO.html">Contacto</a>
-      <a href="BLOG.html">Blog</a>
-      <a href="REGISTRO.html">Registro</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8">
+    <title>Salud Vital</title>
+  </head>
+<!--body con margen 0 para que el encabezado de la página--cubra totalmente los bordes-->
+<body style="
+  margin:0;
+  background-color:#e8e8e8;
+">
+
+  <header style="background-color:red;">
+    <!--Div para el título de la página-->
+    <div style="text-align:center;padding-top:20px;">
+      <h1 style="color:white;">Salud Vital</h1>
+    </div>
+
+    <!--Barra de navegación-->
+    <!--los estilos del nav hacen que tenga un color salmon, que la barra de navegación choque con la del título y hace que los links esten separados-->
+      <nav style="
+        background-color:salmon;
+        margin:0px;
+        padding:10px;
+        display:flex;
+        justify-content:space-around;
+        "> 
+        <a href="CONTACTO.html" style="text-decoration:none; color:white; font-size:25px;font-weight:bold;">Contacto</a>
+        <a href="BLOG.html" style="text-decoration:none; color:white; font-size:25px; font-weight:bold;">Blog</a>
+        <a href="REGISTRO.html" style="text-decoration:none;  color:white; font-size:25px; font-weight:bold;">Registro</a>
+      </nav>
   </header>
-  <section>
-    
+
+  <!--Sección de listas destacadas blah blah blah no voy a entrar en detalle-->
+  <!--ajusta color a un gris, hace los bordes más redondos, da un tamaño adecuado al texto-->
+  <section style="
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 0px auto;
+    padding-bottom: 5px;
+    ">
+    <h3 style="text-align:center;">Blog de Noticias</h3>
+    <hr>
+    <!--Ajusta la cantidad de columnas a 3 con un espacio de 20 pixeles entre columnas-->
+    <ul style="column-count: 3; column-gap: 20px">
+      <li>5 hábitos alimenticios que transforman tu energía diaria</li>
+      <li>Hidratación y salud mental: lo que dice la ciencia</li>
+      <li>Superalimentos 2025: guía actualizada para una dieta equilibrada</li>
+      <li>Ejercicio en ayunas: beneficios y precauciones</li>
+      <li>Microbioma intestinal: clave para fortalecer el sistema inmune</li>
+      <li>Sueño reparador: cómo mejorar tu calidad de descanso naturalmente</li>
+      <li>Vitamina D y su impacto en el estado de ánimo y la energía</li>
+      <li>Ayuno intermitente: qué dice la ciencia en 2025</li>
+      <li>Estrés crónico y alimentación: cómo uno afecta al otro</li>
+      <li>10 alimentos antiinflamatorios que deberías incluir en tu dieta</li>
+    </ul>
   </section>
-  <footer>
-    
+
+  <!--div general que separa las noticias contenedor-->
+  <div style="
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+    ">
+    <!--contenedor de alimentacion aludable-->
+    <section style="
+      background-color:#f0f0f0;
+      padding:20px;
+      border-radius:20px;
+      width:400px;
+      text-align: center;
+      ">
+      <h4>Alimentación Saludable</h4>
+      <hr>
+      <img src="https://centromedicorespirar.com/wp-content/uploads/2023/04/alimentacion2.jpg" style="width:400px; height:350px;border-radius:15px;">
+      <span style="font-weight:bold">Como mejorar tu dieta en 7 días</span>
+      <p style="text-align:left">Pequeños cambios en tu alimentación pueden generar grandes resultados.</p>
+    <a href="https://www.who.int/es/news-room/fact-sheets/detail/healthy-diet" style="display:inline-block;
+          padding:7px 20px;
+          font-size:13px;
+          background:#1D9E75;
+          border-radius:999px;
+          color:#fff;
+          text-decoration:none;
+          width:80px;
+          ">
+          Ver más
+      </a>
+    </section>
+
+    <!--Contenedor de ejercicio y salud-->
+    <section style="
+      background-color:#f0f0f0;
+      padding:20px;
+      border-radius:20px;
+      width:400px;
+      text-align: center;
+      ">
+      <h4>Ejercicio y Salud</h4>
+      <hr>
+      <img src="https://blog.marti.mx/wp-content/uploads/2023/08/salud_mental_ejercicio_header-jpg.webp" style="width:400px; height:350px;border-radius:15px;">
+      <span style="font-weight:bold">Relación entre ejercicio y salud mental</span>
+      <p style="text-align:left">Investigaciones recientes confirman que 30 minutos de actividad física diaria reducen el estrés y mejoran el estado de ánimo.</p>
+      <a href="https://www.who.int/es/news-room/fact-sheets/detail/physical-activity" style="display:inline-block;
+          padding:7px 20px;
+          font-size:13px;
+          background:#1D9E75;
+          border-radius:999px;
+          color:#fff;
+          text-decoration:none;
+          width:80px;
+          ">
+          Ver más
+      </a>
+    </section>
+
+    <!--Contenedor de frutas y bienestar-->
+    <section>
+      <section style="
+      background-color:#f0f0f0;
+      padding:20px;
+      border-radius:20px;
+      width:400px;
+      text-align: center;
+      ">
+      <h4>Frutas y bienestar</h4>
+      <hr>
+      <img src="https://libbys.es/wordpress/wp-content/uploads/2018/04/frutas-salud.jpg" style="width:400px; height:350px;border-radius:15px;">
+      <span style="font-weight:bold">Las aliadas más fuertes para el sistema inmune</span>
+      <p style="text-align:left">Aprende cómo incluir frutas en tu rutina y maximizar sus beneficios en tu cuerpo.</p>
+    <a href="https://www.fao.org/nutrition/es/" style="display:inline-block;
+          padding:7px 20px;
+          font-size:13px;
+          background:#1D9E75;
+          border-radius:999px;
+          color:#fff;
+          text-decoration:none;
+          width:80px;
+          ">
+          Ver más
+      </a>
+    </section>
+  </div>
+
+
+  <footer style="background-color:#f0f0f0;"> 
+    <!--Barra de navegación para el footer con elaces adicionales (no apuntan a ningún lado)--> 
+    <nav style="
+        margin:20px;
+        padding:10px;
+        display:flex;
+        justify-content:space-around;
+        "> 
+        <a href="" style="text-decoration:none; color:black; font-size:15px;font-weight:bold;">Preguntas Frecuntes</a>
+        <a href="" style="text-decoration:none; color:black; font-size:15px;font-weight:bold;">Política de privacidad</a>
+        <a href="" style="text-decoration:none; color:black; font-size:15px;font-weight:bold;">terminos de uso</a>
+        <a href="" style="text-decoration:none; color:black; font-size:15px;font-weight:bold;">Accesibilidad</a>
+        <!--Dropdown de idiomas (no esperen que funcione solo cambia el estado del dropdown)-->
+        <select style="font-size:13px;
+               padding:5px 10px;
+               border:0.5px solid #888;
+               border-radius:8px;
+               background:#fff;
+               color:#222;">
+          <option>Español</option>
+          <option>English</option>
+        </select>
+    </nav>
   </footer>
 </body>
 </html>

@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Salud Vital</title>
-</head>
-<body>
-  <header>
-    <nav> 
-      <a href="HOME.html">Home</a>
-      <a href="CONTACTO.html">Contacto</a>
-      <a href="REGISTRO.html">Registro</a>
-    </nav>
+   <head>
+      <meta charset="UTF-8">
+      <title>Salud Vital</title>
+  </head>
+<!--body con margen 0 para que el encabezado de la página--cubra totalmente los bordes-->
+<body style="
+  margin:0;
+  background-color:#e8e8e8;
+">
+
+  <header style="background-color:red;">
+    <!--Div para el título de la página-->
+    <div style="text-align:center;padding-top:20px;">
+      <h1 style="color:white;">Salud Vital</h1>
+    </div>
+
+    <!--Barra de navegación-->
+    <!--los estilos del nav hacen que tenga un color salmon, que la barra de navegación choque con la del título y hace que los links esten separados-->
+      <nav style="
+        background-color:salmon;
+        margin:0px;
+        padding:10px;
+        display:flex;
+        justify-content:space-around;
+        "> 
+        <a href="HOME.html" style="text-decoration:none; color:white; font-size:25px;font-weight:bold;">Home</a>
+        <a href="CONTACTO.html" style="text-decoration:none; color:white; font-size:25px; font-weight:bold;">Contacto</a>
+        <a href="REGISTRO.html" style="text-decoration:none;  color:white; font-size:25px; font-weight:bold;">Registro</a>
+      </nav>
   </header>
   <section>
     
